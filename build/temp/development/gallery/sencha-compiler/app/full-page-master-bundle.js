@@ -1,2 +1,3 @@
 // @tag full-page
-// @require /home/patrick/workspace/projects/extjs/gallery/app.js
+// @require E:\Work\voda\resources\utils.js
+// @require E:\Work\voda\app.js

@@ -18,7 +18,9 @@ Ext.Loader.addClassPathMappings({
   "Ext.Supports": "ext/src/Support.js",
   "Ext.core.DomHelper": "ext/src/dom/Helper.js",
   "Ext.core.DomQuery": "ext/src/dom/Query.js",
-  "gallery": "app"
+  "gallery": "app",
+  "gallery.view.phoneGrid": "app/view/phoneGrid.js",
+  "phone": "app/Application.js"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -861,7 +863,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "gallery.controller.Main": [],
   "gallery.model.features": [],
   "gallery.view.Main": [],
-  "gallery.view.Viewport": []
+  "gallery.view.Viewport": [],
+  "gallery.view.phoneGallery": [],
+  "gallery.view.phoneGrid": [],
+  "phone": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1875,7 +1880,12 @@ Ext.ClassManager.addNameAliasMappings({
   "gallery.view.Main": [
     "widget.app-main"
   ],
-  "gallery.view.Viewport": []
+  "gallery.view.Viewport": [],
+  "gallery.view.phoneGallery": [
+    "widget.phoneGallery"
+  ],
+  "gallery.view.phoneGrid": [],
+  "phone": []
 });
 
 Ext.setVersion("ext-theme-base", "4.2.5.1763");
