@@ -18,8 +18,9 @@ Ext.Loader.addClassPathMappings({
   "Ext.Supports": "ext/src/Support.js",
   "Ext.core.DomHelper": "ext/src/dom/Helper.js",
   "Ext.core.DomQuery": "ext/src/dom/Query.js",
+  "Ext.ux.DataView.Animated": "resources/ux/Animated.js",
   "gallery": "app",
-  "gallery.view.phoneGrid": "app/view/phoneGrid.js",
+  "gallery.view.phoneGrid": "app/view/phonegrid.js",
   "phone": "app/Application.js"
 });
 
@@ -864,6 +865,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "gallery.model.features": [],
   "gallery.view.Main": [],
   "gallery.view.Viewport": [],
+  "gallery.view.detail": [],
+  "gallery.view.featuresGrid": [],
+  "gallery.view.filters": [],
   "gallery.view.phoneGallery": [],
   "gallery.view.phoneGrid": [],
   "phone": []
@@ -1881,10 +1885,21 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.app-main"
   ],
   "gallery.view.Viewport": [],
+  "gallery.view.detail": [
+    "widget.detail"
+  ],
+  "gallery.view.featuresGrid": [
+    "widget.featuresGrid"
+  ],
+  "gallery.view.filters": [
+    "widget.phonefilters"
+  ],
   "gallery.view.phoneGallery": [
     "widget.phoneGallery"
   ],
-  "gallery.view.phoneGrid": [],
+  "gallery.view.phoneGrid": [
+    "widget.phonegrid"
+  ],
   "phone": []
 });
 

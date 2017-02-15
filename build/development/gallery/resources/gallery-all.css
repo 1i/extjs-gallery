@@ -4679,9 +4679,121 @@ img {
   min-height: 100%;
   *height: 100%; }
 
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/form/Labelable.scss */
+.x-form-item-label {
+  display: block; }
+
+/* line 5, ../../../../ext/packages/ext-theme-base/sass/src/form/Labelable.scss */
+.x-form-item-label-right {
+  text-align: right; }
+
+/* line 9, ../../../../ext/packages/ext-theme-base/sass/src/form/Labelable.scss */
+.x-form-item-label-top {
+  display: block;
+  zoom: 1; }
+
+/* line 15, ../../../../ext/packages/ext-theme-base/sass/src/form/Labelable.scss */
+.x-form-invalid-icon {
+  overflow: hidden; }
+  /* line 17, ../../../../ext/packages/ext-theme-base/sass/src/form/Labelable.scss */
+  .x-form-invalid-icon ul {
+    display: none; }
+
 /* line 1, ../../../../ext/packages/ext-theme-base/sass/src/layout/container/Fit.scss */
 .x-fit-item {
   position: relative; }
+
+/* line 2, ../../../../ext/packages/ext-theme-base/sass/src/panel/Table.scss */
+.x-grid-row,
+.x-grid-data-row {
+  outline: none; }
+
+/* line 6, ../../../../ext/packages/ext-theme-base/sass/src/panel/Table.scss */
+.x-grid-view {
+  overflow: hidden;
+  position: relative; }
+
+/* line 11, ../../../../ext/packages/ext-theme-base/sass/src/panel/Table.scss */
+.x-grid-table {
+  table-layout: fixed;
+  border-collapse: separate; }
+
+/* line 16, ../../../../ext/packages/ext-theme-base/sass/src/panel/Table.scss */
+.x-grid-td {
+  overflow: hidden;
+  border-width: 0;
+  vertical-align: top; }
+
+/* line 22, ../../../../ext/packages/ext-theme-base/sass/src/panel/Table.scss */
+.x-grid-cell-inner {
+  overflow: hidden;
+  white-space: nowrap;
+  zoom: 1; }
+
+/* line 28, ../../../../ext/packages/ext-theme-base/sass/src/panel/Table.scss */
+.x-grid-resize-marker {
+  position: absolute;
+  z-index: 5;
+  top: 0; }
+
+/* line 2, ../../../../ext/packages/ext-theme-base/sass/src/grid/header/DropZone.scss */
+.col-move-top,
+.col-move-bottom {
+  position: absolute;
+  top: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  z-index: 20000;
+  background: no-repeat center top transparent; }
+
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/grid/header/Container.scss */
+.x-grid-header-ct {
+  cursor: default; }
+
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header {
+  position: absolute;
+  overflow: hidden;
+  background-repeat: repeat-x; }
+
+/* line 7, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header-inner {
+  zoom: 1;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden; }
+
+/* line 14, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header-text {
+  white-space: nowrap;
+  background-repeat: no-repeat; }
+
+/* line 31, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header-trigger {
+  display: none;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2; }
+
+/* line 49, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header-over .x-column-header-trigger, .x-column-header-open .x-column-header-trigger {
+  display: block; }
+
+/* line 54, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header-align-right {
+  text-align: right; }
+
+/* line 64, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header-align-left {
+  text-align: left; }
+
+/* line 74, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Column.scss */
+.x-column-header-align-center {
+  text-align: center; }
 
 /* line 1, ../../../../ext/packages/ext-theme-base/sass/src/resizer/Splitter.scss */
 .x-splitter {
@@ -4791,6 +4903,50 @@ img {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
+
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/selection/CheckboxModel.scss */
+.x-column-header-checkbox .x-column-header-text {
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 0; }
+
+/* line 7, ../../../../ext/packages/ext-theme-base/sass/src/selection/CheckboxModel.scss */
+.x-grid-cell-row-checker {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  font-size: 0; }
+
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/slider/Multi.scss */
+.x-slider {
+  outline: none;
+  zoom: 1;
+  position: relative; }
+
+/* line 9, ../../../../ext/packages/ext-theme-base/sass/src/slider/Multi.scss */
+.x-slider-inner {
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  zoom: 1; }
+  /* line 17, ../../../../ext/packages/ext-theme-base/sass/src/slider/Multi.scss */
+  .x-slider-vert .x-slider-inner {
+    background: repeat-y 0 0; }
+
+/* line 23, ../../../../ext/packages/ext-theme-base/sass/src/slider/Multi.scss */
+.x-slider-end {
+  zoom: 1; }
+
+/* line 28, ../../../../ext/packages/ext-theme-base/sass/src/slider/Multi.scss */
+.x-slider-thumb {
+  position: absolute;
+  background: no-repeat 0 0; }
+  /* line 31, ../../../../ext/packages/ext-theme-base/sass/src/slider/Multi.scss */
+  .x-slider-horz .x-slider-thumb {
+    left: 0; }
+  /* line 34, ../../../../ext/packages/ext-theme-base/sass/src/slider/Multi.scss */
+  .x-slider-vert .x-slider-thumb {
+    bottom: 0; }
 
 /* line 1, ../../../../ext/packages/ext-theme-base/sass/src/tab/Tab.scss */
 a.x-tab {
@@ -10752,6 +10908,565 @@ a.x-tab {
   .x-tip-body-default a {
     color: #2a2a2a; }
 
+/* line 137, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 4px 4px 4px 4px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: white; }
+
+/* line 187, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-mc {
+  background-color: white; }
+
+/* line 234, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-nbr .x-tip-form-invalid {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent; }
+
+/* line 249, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-frameInfo {
+  font-family: th-5-5-5-5-1-1-1-1-4-4-4-4; }
+
+/* line 315, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-tl {
+  background-position: 0 -10px; }
+
+/* line 319, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-tr {
+  background-position: right -15px; }
+
+/* line 323, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-bl {
+  background-position: 0 -20px; }
+
+/* line 327, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-br {
+  background-position: right -25px; }
+
+/* line 331, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-ml {
+  background-position: 0 top; }
+
+/* line 335, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-mr {
+  background-position: right top; }
+
+/* line 339, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-tc {
+  background-position: 0 0; }
+
+/* line 343, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-bc {
+  background-position: 0 -5px; }
+
+/* line 350, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-tr,
+.x-tip-form-invalid-br,
+.x-tip-form-invalid-mr {
+  padding-right: 5px; }
+
+/* line 356, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-tl,
+.x-tip-form-invalid-bl,
+.x-tip-form-invalid-ml {
+  padding-left: 5px; }
+
+/* line 360, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-tc {
+  height: 5px; }
+
+/* line 363, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-bc {
+  height: 5px; }
+
+/* line 374, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-tl,
+.x-tip-form-invalid-bl,
+.x-tip-form-invalid-tr,
+.x-tip-form-invalid-br,
+.x-tip-form-invalid-tc,
+.x-tip-form-invalid-bc,
+.x-tip-form-invalid-ml,
+.x-tip-form-invalid-mr {
+  zoom: 1;
+  background-image: url(images/tip/tip-form-invalid-corners.gif); }
+
+/* line 418, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-ml,
+.x-tip-form-invalid-mr {
+  zoom: 1;
+  background-image: url(images/tip/tip-form-invalid-sides.gif);
+  background-repeat: repeat-y; }
+
+/* line 430, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tip-form-invalid-mc {
+  padding: 0px 0px 0px 0px; }
+
+/* line 439, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-strict .x-ie7 .x-tip-form-invalid-tl,
+.x-strict .x-ie7 .x-tip-form-invalid-bl {
+  position: relative;
+  right: 0; }
+
+/* */
+/* line 112, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+.x-tip-form-invalid {
+  border-color: #a1311f;
+  -webkit-box-shadow: #d87166 0 1px 0px 0 inset, #d87166 0 -1px 0px 0 inset, #d87166 -1px 0 0px 0 inset, #d87166 1px 0 0px 0 inset;
+  -moz-box-shadow: #d87166 0 1px 0px 0 inset, #d87166 0 -1px 0px 0 inset, #d87166 -1px 0 0px 0 inset, #d87166 1px 0 0px 0 inset;
+  box-shadow: #d87166 0 1px 0px 0 inset, #d87166 0 -1px 0px 0 inset, #d87166 -1px 0 0px 0 inset, #d87166 1px 0 0px 0 inset; }
+  /* line 121, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+  .x-tip-form-invalid .x-tool-img {
+    background-color: white; }
+
+/* line 136, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+.x-tip-header-form-invalid .x-tool-after-title {
+  margin: 0 0 0 6px; }
+/* line 146, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+.x-tip-header-form-invalid .x-tool-before-title {
+  margin: 0 6px 0 0; }
+
+/* line 157, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+.x-tip-header-body-form-invalid {
+  padding: 3px 3px 0 3px; }
+
+/* line 161, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+.x-tip-header-text-container-form-invalid {
+  color: #444444;
+  font-size: 11px;
+  font-weight: bold; }
+
+/* line 167, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+.x-tip-body-form-invalid {
+  padding: 3px 3px 3px 22px;
+  color: #444444;
+  font-size: 11px;
+  font-weight: normal; }
+  /* line 172, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+  .x-tip-body-form-invalid a {
+    color: #2a2a2a; }
+
+/* line 277, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+.x-tip-body-form-invalid {
+  background: 1px 1px no-repeat;
+  background-image: url(images/form/exclamation.gif); }
+  /* line 280, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+  .x-tip-body-form-invalid li {
+    margin-bottom: 4px; }
+    /* line 282, ../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
+    .x-tip-body-form-invalid li.last {
+      margin-bottom: 0; }
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+.x-form-invalid-under {
+  padding: 2px 2px 2px 20px;
+  color: #c0272b;
+  font: normal 11px tahoma, arial, verdana, sans-serif;
+  line-height: 16px;
+  background: no-repeat 0 2px;
+  background-image: url(images/form/exclamation.gif); }
+
+/* line 14, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+div.x-lbl-top-err-icon {
+  margin-bottom: 3px; }
+
+/* line 18, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+.x-form-invalid-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 1px;
+  background-image: url(images/form/exclamation.gif);
+  background-repeat: no-repeat; }
+
+/* line 26, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+.x-form-item-label {
+  color: black;
+  font: normal 12px/14px tahoma, arial, verdana, sans-serif;
+  margin-top: 4px; }
+  /* line 31, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+  .x-toolbar-item .x-form-item-label {
+    font: normal 11px/13px tahoma, arial, verdana, sans-serif;
+    margin-top: 4px; }
+
+/* line 45, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+.x-autocontainer-form-item,
+.x-anchor-form-item,
+.x-vbox-form-item,
+.x-table-form-item {
+  margin-bottom: 5px; }
+
+/* line 54, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+.x-ie6 .x-form-form-item td {
+  border-top-width: 0; }
+/* line 60, ../../../../ext/packages/ext-theme-neutral/sass/src/form/Labelable.scss */
+.x-ie6 td.x-form-item-pad {
+  height: 5px; }
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Base.scss */
+.x-form-field {
+  color: black; }
+
+/* line 6, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Base.scss */
+.x-form-item,
+.x-form-field {
+  font: normal 12px tahoma, arial, verdana, sans-serif; }
+
+/* line 21, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Base.scss */
+.x-form-type-text textarea.x-form-invalid-field, .x-form-type-text input.x-form-invalid-field,
+.x-form-type-password textarea.x-form-invalid-field,
+.x-form-type-password input.x-form-invalid-field,
+.x-form-type-number textarea.x-form-invalid-field,
+.x-form-type-number input.x-form-invalid-field,
+.x-form-type-email textarea.x-form-invalid-field,
+.x-form-type-email input.x-form-invalid-field,
+.x-form-type-search textarea.x-form-invalid-field,
+.x-form-type-search input.x-form-invalid-field,
+.x-form-type-tel textarea.x-form-invalid-field,
+.x-form-type-tel input.x-form-invalid-field {
+  background-color: white;
+  background-image: url(images/grid/invalid_line.gif);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  border-color: #cc3300; }
+
+/* line 37, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Base.scss */
+.x-item-disabled .x-form-item-label,
+.x-item-disabled .x-form-field,
+.x-item-disabled .x-form-display-field,
+.x-item-disabled .x-form-cb-label,
+.x-item-disabled .x-form-trigger {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3; }
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-body {
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #99bce8; }
+
+/* line 8, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-empty {
+  padding: 10px;
+  color: gray;
+  background-color: white;
+  font: normal 11px tahoma, arial, verdana, sans-serif; }
+
+/* line 15, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-cell {
+  color: "none";
+  font: normal 11px/13px tahoma, arial, verdana, sans-serif;
+  background-color: white;
+  border-color: #ededed #d0d0d0 #ededed #d0d0d0;
+  border-style: solid; }
+
+/* line 26, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-alt .x-grid-td {
+  background-color: #fafafa; }
+/* line 30, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-before-over .x-grid-td {
+  border-bottom-style: solid;
+  border-bottom-color: #dddddd; }
+/* line 35, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-over .x-grid-td {
+  border-bottom-style: solid;
+  border-bottom-color: #dddddd; }
+/* line 40, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-before-selected .x-grid-td {
+  border-bottom-style: dotted;
+  border-bottom-color: #a3bae9; }
+/* line 45, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-selected .x-grid-td {
+  border-bottom-style: dotted;
+  border-bottom-color: #a3bae9; }
+/* line 50, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-before-focused .x-grid-td {
+  border-bottom-style: dotted;
+  border-bottom-color: #464646;
+  border-bottom-width: 1px; }
+/* line 58, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-focused .x-grid-td {
+  background-color: #efefef; }
+/* line 65, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-over .x-grid-td {
+  background-color: #efefef; }
+/* line 73, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-selected .x-grid-td {
+  background-color: #dfe8f6; }
+/* line 82, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-focused .x-grid-td {
+  border-bottom-style: dotted;
+  border-bottom-color: #464646;
+  border-bottom-width: 1px; }
+/* line 92, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-table .x-grid-row-focused-first .x-grid-td {
+  border-top: 1px dotted #464646; }
+/* line 103, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-selected .x-grid-row-summary .x-grid-td {
+  border-bottom-color: #dfe8f6;
+  border-top-width: 0; }
+/* line 108, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row-focused .x-grid-row-summary .x-grid-td {
+  border-bottom-color: #efefef;
+  border-top-width: 0; }
+
+/* line 115, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-with-row-lines .x-grid-td {
+  border-bottom-width: 1px; }
+/* line 121, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-with-row-lines .x-grid-table {
+  border-top: 1px solid white; }
+/* line 125, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-with-row-lines .x-grid-table-over-first {
+  border-top-style: solid;
+  border-top-color: #dddddd; }
+/* line 130, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-with-row-lines .x-grid-table-selected-first {
+  border-top-style: dotted;
+  border-top-color: #a3bae9; }
+
+/* line 139, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-body .x-grid-table-focused-first {
+  border-top: 1px dotted #464646; }
+
+/* line 149, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-cell-inner {
+  text-overflow: ellipsis;
+  padding: 3px 6px 4px 6px; }
+
+/* line 163, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-no-row-lines .x-grid-row-focused .x-grid-cell-inner {
+  padding-top: 2px;
+  padding-bottom: 3px; }
+
+/* line 178, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-cell-special {
+  border-color: #ededed #d0d0d0 #ededed #d0d0d0;
+  border-style: solid;
+  border-right-width: 1px;
+  background-image: none;
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e9e9e9));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #e9e9e9);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #e9e9e9);
+  background-image: -o-linear-gradient(top, #f6f6f6, #e9e9e9);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #e9e9e9);
+  background-image: linear-gradient(top, #f6f6f6, #e9e9e9);
+  /* */
+  /* */ }
+  /* line 191, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+  .x-grid-row-selected .x-grid-cell-special {
+    border-right-color: #ededed #aaccf6;
+    background-image: none;
+    background-color: #dfe8f6;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #dfe8f6), color-stop(100%, #cbdaf0));
+    background-image: -webkit-linear-gradient(left, #dfe8f6, #cbdaf0);
+    background-image: -moz-linear-gradient(left, #dfe8f6, #cbdaf0);
+    background-image: -o-linear-gradient(left, #dfe8f6, #cbdaf0);
+    background-image: -ms-linear-gradient(left, #dfe8f6, #cbdaf0);
+    background-image: linear-gradient(left, #dfe8f6, #cbdaf0); }
+  /* line 206, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+  .x-nlg .x-grid-cell-special {
+    background-repeat: repeat-y;
+    background-image: url(images/grid/cell-special-bg.gif); }
+  /* line 211, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+  .x-nlg .x-grid-row-selected .x-grid-cell-special {
+    background-image: url(images/grid/cell-special-selected-bg.gif); }
+  /* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+  .x-grid-cell-special .x-grid-cell-special:after {
+    display: none;
+    content: "x-slicer:bg:url(images/grid/cell-special-bg.gif)"; }
+  /* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+  .x-grid-cell-special .x-grid-cell-special-selected:after {
+    display: none;
+    content: "x-slicer:bg:url(images/grid/cell-special-selected-bg.gif)"; }
+
+/* line 228, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-dirty-cell {
+  background: url(images/grid/dirty.gif) no-repeat 0 0; }
+
+/* line 241, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-row .x-grid-cell-selected {
+  color: "none";
+  background-color: #b8cfee; }
+
+/* line 247, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-with-col-lines .x-grid-cell {
+  border-right-width: 1px; }
+
+/* line 259, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Table.scss */
+.x-grid-resize-marker {
+  width: 1px;
+  background-color: #0f0f0f; }
+
+/* line 2, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/DropZone.scss */
+.col-move-top,
+.col-move-bottom {
+  width: 9px;
+  height: 9px; }
+
+/* line 7, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/DropZone.scss */
+.col-move-top {
+  background-image: url(images/grid/col-move-top.gif); }
+
+/* line 11, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/DropZone.scss */
+.col-move-bottom {
+  background-image: url(images/grid/col-move-bottom.gif); }
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/Container.scss */
+.x-grid-header-ct {
+  border: 1px solid #99bce8;
+  border-bottom-color: #c5c5c5;
+  background-color: #c5c5c5;
+  background-image: none;
+  background-color: #c5c5c5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #e3e4e6));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: -o-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: -ms-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: linear-gradient(top, #f9f9f9, #e3e4e6); }
+
+/* line 28, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/Container.scss */
+.x-grid-body {
+  border-top-color: #c5c5c5; }
+
+/* line 32, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/Container.scss */
+.x-hmenu-sort-asc {
+  background-image: url(images/grid/hmenu-asc.gif); }
+
+/* line 36, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/Container.scss */
+.x-hmenu-sort-desc {
+  background-image: url(images/grid/hmenu-desc.gif); }
+
+/* line 40, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/header/Container.scss */
+.x-cols-icon {
+  background-image: url(images/grid/columns.gif); }
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header {
+  border-right: 1px solid #c5c5c5;
+  color: black;
+  font: normal 11px/13px tahoma, arial, verdana, sans-serif;
+  background-image: none;
+  background-color: #c5c5c5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #e3e4e6));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: -o-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: -ms-linear-gradient(top, #f9f9f9, #e3e4e6);
+  background-image: linear-gradient(top, #f9f9f9, #e3e4e6); }
+
+/* line 24, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-group-sub-header {
+  background: transparent;
+  border-top: 1px solid #c5c5c5; }
+  /* line 29, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+  .x-group-sub-header .x-column-header-inner {
+    padding: 3px 6px 5px 6px; }
+
+/* line 34, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-inner {
+  padding: 4px 6px 5px 6px;
+  text-overflow: ellipsis; }
+
+/* line 39, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-inner-empty {
+  text-overflow: clip; }
+
+/* line 48, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-over,
+.x-column-header-sort-ASC,
+.x-column-header-sort-DESC {
+  background-image: none;
+  background-color: #aaccf6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebf3fd), color-stop(39%, #ebf3fd), color-stop(40%, #d9e8fb), color-stop(100%, #d9e8fb));
+  background-image: -webkit-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+  background-image: -moz-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+  background-image: -o-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+  background-image: -ms-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+  background-image: linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb); }
+
+/* line 56, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-nlg .x-grid-header-ct,
+.x-nlg .x-column-header {
+  background-image: url(images/grid/column-header-bg.gif); }
+
+/* line 67, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-nlg .x-column-header-over,
+.x-nlg .x-column-header-sort-ASC,
+.x-nlg .x-column-header-sort-DESC {
+  background-image: url(images/grid/column-header-over-bg.gif); }
+
+/* line 75, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-open {
+  background-color: transparent; }
+  /* line 78, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+  .x-column-header-open .x-column-header-trigger {
+    background-color: transparent; }
+
+/* line 83, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-trigger {
+  width: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  background-position: 0 center; }
+
+/* line 101, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-align-right .x-column-header-text {
+  margin-right: 9px; }
+
+/* line 115, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-sort-ASC .x-column-header-text,
+.x-column-header-sort-DESC .x-column-header-text {
+  padding-right: 12px;
+  background-position: right center; }
+
+/* line 132, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-sort-ASC .x-column-header-text {
+  background-image: url(images/grid/sort_asc.gif); }
+
+/* line 135, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Column.scss */
+.x-column-header-sort-DESC .x-column-header-text {
+  background-image: url(images/grid/sort_desc.gif); }
+
+/* */
+/* */
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
+.x-grid-locked .x-grid-inner-locked {
+  border-width: 0 1px 0 0;
+  border-style: solid; }
+
+/* line 12, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
+.x-grid-locked-split .x-grid-inner-normal {
+  border-width: 0 0 0 1px;
+  border-style: solid; }
+
+/* line 28, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
+.x-grid-inner-locked .x-column-header-last,
+.x-grid-inner-locked .x-grid-cell-last {
+  border-right-width: 0!important; }
+
+/* line 50, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
+.x-hmenu-lock {
+  background-image: url(images/grid/hmenu-lock.gif); }
+
+/* line 54, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/locking/Lockable.scss */
+.x-hmenu-unlock {
+  background-image: url(images/grid/hmenu-unlock.gif); }
+
 /* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/resizer/Splitter.scss */
 .x-collapse-el {
   cursor: pointer; }
@@ -10970,6 +11685,11 @@ a.x-tab {
 /* line 285, ../../../../ext/packages/ext-theme-neutral/sass/src/menu/Menu.scss */
 .x-ie .x-menu-item-disabled .x-menu-item-text {
   background-color: transparent; }
+
+/* line 295, ../../../../ext/packages/ext-theme-neutral/sass/src/menu/Menu.scss */
+.x-menu-item .x-form-item-label {
+  font-size: 11px;
+  color: #222222; }
 
 /* line 301, ../../../../ext/packages/ext-theme-neutral/sass/src/menu/Menu.scss */
 .x-menu-scroll-top {
@@ -11395,6 +12115,114 @@ a.x-tab {
 .x-resizable-pinned .x-resizable-handle-southwest {
   background-position: top right;
   background-image: url(images/sizer/sw-handle.gif); }
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
+.x-column-header-checkbox {
+  border-color: #c5c5c5; }
+
+/* line 6, ../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
+.x-grid-row-checker,
+.x-column-header-checkbox .x-column-header-text {
+  height: 13px;
+  width: 13px;
+  background-image: url(images/form/checkbox.gif);
+  line-height: 13px; }
+
+/* line 15, ../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
+.x-column-header-checkbox .x-column-header-inner {
+  padding: 5px 5px 4px 5px; }
+
+/* line 19, ../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
+.x-grid-cell-row-checker .x-grid-cell-inner {
+  padding: 4px 5px 3px 5px; }
+  /* line 23, ../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
+  .x-grid-no-row-lines .x-grid-row-focused .x-grid-cell-row-checker .x-grid-cell-inner {
+    padding-top: 3px;
+    padding-bottom: 2px; }
+
+/* line 32, ../../../../ext/packages/ext-theme-neutral/sass/src/selection/CheckboxModel.scss */
+.x-grid-hd-checker-on .x-column-header-text,
+.x-grid-row-selected .x-grid-row-checker,
+.x-grid-row-checked .x-grid-row-checker {
+  background-position: 0 -13px; }
+
+/* Horizontal styles */
+/* line 2, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-horz {
+  padding-left: 7px;
+  background: no-repeat 0 -15px; }
+  /* line 6, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+  .x-slider-horz .x-slider-end {
+    padding-right: 7px;
+    background: no-repeat right -30px; }
+
+/* line 12, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-horz .x-slider-inner {
+  height: 15px; }
+
+/* line 20, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-ie6 .x-form-item .x-slider-horz,
+.x-ie7 .x-form-item .x-slider-horz,
+.x-quirks .x-ie .x-form-item .x-slider-horz {
+  margin-top: 4px; }
+
+/* line 26, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-horz .x-slider-thumb {
+  width: 14px;
+  height: 15px;
+  margin-left: -7px;
+  background-image: url(images/slider/slider-thumb.png); }
+
+/* line 33, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-horz .x-slider-thumb-over {
+  background-position: -14px -15px; }
+
+/* line 37, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-horz .x-slider-thumb-drag {
+  background-position: -28px -30px; }
+
+/* Vertical styles */
+/* line 60, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-vert {
+  padding-top: 7px;
+  background: no-repeat -30px 0; }
+
+/* line 65, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-vert .x-slider-end {
+  padding-bottom: 7px;
+  background: no-repeat -15px bottom;
+  width: 15px; }
+
+/* line 71, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-vert .x-slider-inner {
+  width: 15px; }
+
+/* line 75, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-vert .x-slider-thumb {
+  width: 15px;
+  height: 14px;
+  margin-bottom: -7px;
+  background-image: url(images/slider/slider-v-thumb.png); }
+
+/* line 82, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-vert .x-slider-thumb-over {
+  background-position: -15px -14px; }
+
+/* line 86, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-vert .x-slider-thumb-drag {
+  background-position: -30px -28px; }
+
+/* line 92, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-horz,
+.x-slider-horz .x-slider-end,
+.x-slider-horz .x-slider-inner {
+  background-image: url(images/slider/slider-bg.png); }
+
+/* line 98, ../../../../ext/packages/ext-theme-neutral/sass/src/slider/Multi.scss */
+.x-slider-vert,
+.x-slider-vert .x-slider-end,
+.x-slider-vert .x-slider-inner {
+  background-image: url(images/slider/slider-v-bg.png); }
 
 /**
  * Creates a visual theme for a Tab
@@ -13274,6 +14102,11 @@ a.x-tab {
 .x-box-blue .x-box-mr {
   background-image: url(images/box/r-blue.gif); }
 
+/* line 1, ../../../../ext/packages/ext-theme-classic/sass/src/grid/column/Column.scss */
+.x-column-header-trigger {
+  background-color: #c5c5c5;
+  background-image: url(images/grid/grid3-hd-btn.gif); }
+
 /* line 3, ../../../../ext/packages/ext-theme-classic/sass/src/resizer/Resizer.scss */
 .x-resizable-handle-east-over,
 .x-resizable-handle-west-over {
@@ -13320,6 +14153,23 @@ a.x-tab {
 /* line 51, ../../../../ext/packages/ext-theme-classic/sass/src/resizer/Resizer.scss */
 .x-resizable-pinned .x-resizable-handle-southwest {
   background-position: top right; }
+
+/* line 6, ../../../../ext/packages/ext-theme-classic/sass/src/slider/Multi.scss */
+.x-ie6 .x-slider-horz,
+.x-ie6 .x-slider-horz .x-slider-end,
+.x-ie6 .x-slider-horz .x-slider-inner {
+  background-image: url(images/slider/slider-bg.gif); }
+/* line 10, ../../../../ext/packages/ext-theme-classic/sass/src/slider/Multi.scss */
+.x-ie6 .x-slider-horz .x-slider-thumb {
+  background-image: url(images/slider/slider-thumb.gif); }
+/* line 16, ../../../../ext/packages/ext-theme-classic/sass/src/slider/Multi.scss */
+.x-ie6 .x-slider-vert,
+.x-ie6 .x-slider-vert .x-slider-end,
+.x-ie6 .x-slider-vert .x-slider-inner {
+  background-image: url(images/slider/slider-v-bg.gif); }
+/* line 20, ../../../../ext/packages/ext-theme-classic/sass/src/slider/Multi.scss */
+.x-ie6 .x-slider-vert .x-slider-thumb {
+  background-image: url(images/slider/slider-v-thumb.gif); }
 
 /* line 1, ../../../../ext/packages/ext-theme-classic/sass/src/tab/Panel.scss */
 .x-tab-icon-el {

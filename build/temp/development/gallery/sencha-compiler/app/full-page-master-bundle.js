@@ -1,3 +1,4 @@
 // @tag full-page
-// @require E:\Work\voda\resources\utils.js
-// @require E:\Work\voda\app.js
+// @require /home/patrick/workspace/projects/extjs/gallery/resources/utils.js
+// @require /home/patrick/workspace/projects/extjs/gallery/resources/ux/Animated.js
+// @require /home/patrick/workspace/projects/extjs/gallery/app.js

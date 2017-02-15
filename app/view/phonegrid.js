@@ -1,102 +1,115 @@
 Ext.define('gallery.view.phoneGrid', {
-    extend: 'Ext.grid.Panel',
-    alias: 'widget.phonegrid',
-    height: 400,
-    //store : Ext.getStore('phoneStore'),
-    columns: [
-            {
-                "text": "product id",
-                "dataIndex": "productid"
-            },
-            {
-                "text": "ttproductid",
-                "dataIndex": "ttproductid",
-                hidden: true
-            },
-            {
-                "text": "handsetcode",
-                "dataIndex": "handsetcode",
-                hidden: true
-            },
-            {
-                "text": "offer code",
-                "dataIndex": "offercode",
-                hidden: true
-            },
-            {
-                "text": "imageFront",
-                "dataIndex": "imageFront",
-                hidden: true
-            },
-            {
-                "text": "imageBack",
-                "dataIndex": "imageBack",
-                hidden: true
-            },
-            {
-                "text": "imageDetails",
-                "dataIndex": "imageDetails",
-                hidden: true
-            },
-            {
-                "text": "product category",
-                "dataIndex": "productcategory",
-                hidden: true
-            },
-            {
-                "text": "description",
-                "dataIndex": "description"
-            },
-            {
-                "text": "extra Description",
-                "dataIndex": "extraDescription"
-            },
-            {
-                "text": "manufacturer",
-                "dataIndex": "manufacturer"
-            },
-            {
-                "text": "out Of Stock",
-                "dataIndex": "outOfStock"
-            },
-            {
-                "text": "category features",
-                "dataIndex": "categoryfeatures"
-            },
-            {
-                "text": "colors",
-                "dataIndex": "colors"
-            },
-            {
-                "text": "sort features",
-                "dataIndex": "sortfeatures"
-            },
-            {
-                "text": "filter features",
-                "dataIndex": "filterfeatures"
-            },
-            {
-                "text": "inFuture",
-                "dataIndex": "inFuture",
-                hidden: true
-            },
-            {
-                "text": "rating",
-                "dataIndex": "rating"
-            },
-            {
-                "text": "enabled4G",
-                "dataIndex": "enabled4G"
-            },
-            {
-                "text": "productDescription",
-                "dataIndex": "productDescription",
-                hidden : true
-            },
-            {
-                "text": "priceFrom",
-                "dataIndex": "priceFrom"
-            }
-    ]
+  extend: 'Ext.grid.Panel',
+  alias: 'widget.phonegrid',
+  height: 400,
+  //store : Ext.getStore('phoneStore'),
+  columns: [{
+      "text": "product id",
+      "dataIndex": "productid",
+      width: 'auto'
+    }, {
+      "text": "ttproductid",
+      "dataIndex": "ttproductid",
+      hidden: true,
+      width: 'auto'
+    }, {
+      "text": "handsetcode",
+      "dataIndex": "handsetcode",
+      hidden: true,
+      width: 'auto'
+    }, {
+      "text": "offer code",
+      "dataIndex": "offercode",
+      hidden: true,
+      width: 'auto'
+    }, {
+      "text": "imageFront",
+      "dataIndex": "imageFront",
+      hidden: true,
+      width: 'auto'
+    }, {
+      "text": "imageBack",
+      "dataIndex": "imageBack",
+      hidden: true,
+      width: 'auto'
+    }, {
+      "text": "imageDetails",
+      "dataIndex": "imageDetails",
+      hidden: true,
+      width: 'auto'
+    }, {
+      "text": "product category",
+      "dataIndex": "productcategory",
+      hidden: true,
+      width: 'auto'
+    }, {
+      "text": "description",
+      "dataIndex": "description",
+      width: 175,
+    }, {
+      "text": "extra Description",
+      "dataIndex": "extraDescription",
+      width: 'auto'
+    }, {
+      "text": "manufacturer",
+      "dataIndex": "manufacturer",
+      width: 'auto'
+    }, {
+      "text": "out Of Stock",
+      "dataIndex": "outOfStock",
+      width: 'auto'
+    },
+    // {
+    //   "text": "category features",
+    //   "dataIndex": "categoryfeatures"
+    // },
+    {
+      "text": "colors",
+      "dataIndex": "colors",
+      width: 150
+    },
+    // {
+    //   "text": "sort features",
+    //   "dataIndex": "sortfeatures"
+    // },
+    //{
+    //   "text": "filter features",
+    //   "dataIndex": "filterfeatures",
+    //   hidden: true
+    // },
+    {
+      "text": "inFuture",
+      "dataIndex": "inFuture",
+      width: 'auto',
+      hidden: true
+    }, {
+      "text": "rating",
+      "dataIndex": "rating",
+      width: 'auto'
+    }, {
+      "text": "4G",
+      "dataIndex": "enabled4G",
+      width: 'auto'
+    }, {
+      "text": "productDescription",
+      "dataIndex": "productDescription",
+      hidden: true
+    }, {
+      "text": "priceFrom",
+      "dataIndex": "priceFrom",
+      width: 'auto'
+    },
+
+  ],
+  listeners: {
+
+    itemdblclick: function(grid, record, item, index, e, eOpts) {
+      var tabpanel = grid.up('app-main').down('tabpanel');
+      var dvPanel = tabpanel.down('panel[use=detailedView]');
+      tabpanel.setActiveTab(dvPanel);
+      dvPanel.loadImage(record.get('imageDetails'))
+      dvPanel.writeInfo(record)
+    }
+  }
 
 });
