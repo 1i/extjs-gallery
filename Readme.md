@@ -1,34 +1,20 @@
-# gallery/app
+# gallery
 
-This folder contains the javascript files for the application.
+Minified under the build/production/gallery
+Still works without minification from root folder  
 
-# gallery/resources
+### Features
+Loads of info in the feeds.json  
+good in grids and with some filters  
 
-This folder contains static resources (typically an `"images"` folder as well).
+### Whats missing
+Better CSS, better sass  
+better assocations between phone, filterfeatures, categoryfeatures  
+only between phone and filterfeatures exists  
 
-# gallery/overrides
 
-This folder contains override classes. All overrides in this folder will be 
-automatically included in application builds if the target class of the override
-is loaded.
 
-# gallery/sass/etc
+https://github.com/1i/laughing-palm-tree
 
-This folder contains misc. support code for sass builds (global functions, 
-mixins, etc.)
 
-# gallery/sass/src
 
-This folder contains sass files defining css rules corresponding to classes
-included in the application's javascript code build.  By default, files in this 
-folder are mapped to the application's root namespace, 'gallery'. The
-namespace to which files in this directory are matched is controlled by the
-app.sass.namespace property in gallery/.sencha/app/sencha.cfg. 
-
-# gallery/sass/var
-
-This folder contains sass files defining sass variables corresponding to classes
-included in the application's javascript code build.  By default, files in this 
-folder are mapped to the application's root namespace, 'gallery'. The
-namespace to which files in this directory are matched is controlled by the
-app.sass.namespace property in gallery/.sencha/app/sencha.cfg. 
