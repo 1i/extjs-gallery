@@ -11,6 +11,7 @@ good in grids and with some filters
 Better CSS, better sass  
 better assocations between phone, filterfeatures, categoryfeatures  
 only between phone and filterfeatures exists  
+npm script to run a local web server, works on linux not on windows  
 
 
 
