@@ -8,11 +8,11 @@ Ext.define('gallery.Application', {
   views: [
     'gallery.view.phoneGallery',
     'phoneGrid',
-    'detail'
+    'detail',
+    'featuresGrid',
+    'phonefilters'
   ],
-
   controllers: [],
-
   stores: [],
 
   launch: function() {
@@ -20,23 +20,22 @@ Ext.define('gallery.Application', {
     var flatter = {};
     var phoneFields = [];
     var first = json[Object.keys(json)[0]];
+    //get all the phoneFields for a model
     for (var key in first) {
       phoneFields.push({
         name: key
       });
     }
-    phoneFields.push({
-      name: 'Android',
-      mapping: 'filterfeatures.Android'
-    })
-
+    //create a phone model
     var phone = Ext.define('phone', {
       extend: 'Ext.data.Model',
       fields: phoneFields,
     });
+
     var store = Ext.create('Ext.data.Store', {
       storeId: 'phoneStore',
       model: phone,
+      //create an assoication with features
       associations: [{
         type: 'hasMany',
         model: 'features',
@@ -47,43 +46,10 @@ Ext.define('gallery.Application', {
     var grid = Ext.create('gallery.view.phoneGrid', {
       store: store
     });
+    //quick add of grid to south region
     Ext.ComponentQuery.query('panel[region=south]')[0].add(grid);
 
-    function filterData(slider) {
-      var values = slider.getValues();
-
-      var test = [];
-
-      //TODO: the suspend/resume hack can be removed once Filtering has been updated
-      store.suspendEvents();
-      store.clearFilter();
-      store.resumeEvents();
-      store.filter([{
-        fn: function(record) {
-          return record.get('priceFrom') >= values[0] && record.get(
-            'priceFrom') <= values[1];
-        }
-      }]);
-
-      store.sort('name', 'ASC');
-    }
-
-    var phoneSlider = Ext.create('Ext.slider.Multi', {
-      hideLabel: false,
-      width: 300,
-      fieldLabel: "Price",
-      minValue: 0,
-      maxValue: 500,
-      values: [0, 700],
-
-      listeners: {
-        change: {
-          buffer: 70,
-          fn: filterData
-        }
-      }
-    });
-
+    
     var view = {
       xtype: 'container',
       title: 'gallery',
@@ -92,7 +58,9 @@ Ext.define('gallery.Application', {
           title: 'dataview',
           id: 'images-view',
           store: store,
+          //a nice template which is part of HTML5 spec
           tpl: [
+          //for each item of store
             '<tpl for=".">',
             '<div class="thumb-wrap">',
             '<div class="thumb">',
@@ -100,6 +68,7 @@ Ext.define('gallery.Application', {
             '</div>',
             '{description}<br>',
             '{priceFrom:usMoney} ( Rating : {rating})',
+            //only show if price is > 1 but messed with layout
             // '<tpl if="priceFrom &gt; 1">{priceFrom:usMoney} </tpl>',
             // '<tpl if="rating &gt; 1">( Rating : {rating}) </tpl>',
             '</div>',
@@ -107,7 +76,7 @@ Ext.define('gallery.Application', {
             '<div class="x-clear"></div>'
           ],
           plugins: [
-            //buggy but looks nice
+            //buggy third party library but looks nice
             // Ext.create('Ext.ux.DataView.Animated', {
             //   duration: 550,
             //   idProperty: 'id'
@@ -122,9 +91,6 @@ Ext.define('gallery.Application', {
           itemSelector: 'div.thumb-wrap',
           emptyText: 'No results to display',
           listeners: {
-            afterrender: function() {
-              console.log('AF', this);
-            },
             itemclick: function(view, record, item, index, e, eOpts) {
               var phoneFeatures = record.get(
                 'filterfeatures');
@@ -149,17 +115,16 @@ Ext.define('gallery.Application', {
 
       ]
     };
+    //quick add
     Ext.ComponentQuery.query('tabpanel')[0].down('container[use=gallery]')
       .add(view);
 
-
-
+    //add each phone to the store, removing if number key
     Ext.each(json, function(phone) {
       for (key in phone) {
         store.add(phone[key]);
       }
     });
-    console.log(store);
 
   },
 

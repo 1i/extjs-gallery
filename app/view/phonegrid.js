@@ -49,7 +49,7 @@ Ext.define('gallery.view.phoneGrid', {
     }, {
       "text": "extra Description",
       "dataIndex": "extraDescription",
-      width: 'auto'
+      width: 150
     }, {
       "text": "manufacturer",
       "dataIndex": "manufacturer",
@@ -66,7 +66,7 @@ Ext.define('gallery.view.phoneGrid', {
     {
       "text": "colors",
       "dataIndex": "colors",
-      width: 150
+      width: 175
     },
     // {
     //   "text": "sort features",
@@ -107,7 +107,7 @@ Ext.define('gallery.view.phoneGrid', {
       var tabpanel = grid.up('app-main').down('tabpanel');
       var dvPanel = tabpanel.down('panel[use=detailedView]');
       tabpanel.setActiveTab(dvPanel);
-      dvPanel.loadImage(record.get('imageDetails'))
+      dvPanel.loadImage(record.get('imageDetails'),record.get('handsetcode'))
       dvPanel.writeInfo(record)
     }
   }

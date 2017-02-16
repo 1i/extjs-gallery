@@ -1,0 +1,15 @@
+{
+  "name": "gallery",
+  "version": "0.0.1",
+  "description": "Gallery app for interview",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "npm http-server"
+  },
+  "author": "patrick.osullivan",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

@@ -70,3 +70,32 @@
     position:relative;
     overflow:hidden;
 }
+.x-tab-bar-default-top {
+background-image:linear-gradient(to top,#af0000 0,#e60000 100%);
+background-color: #ca0000;
+color: #fff;
+}
+.x-panel-header-default {
+background-image:linear-gradient(to top,#af0000 0,#e60000 100%);
+background-color: #ca0000;
+color: #fff;
+}
+.x-tab-default-top, .x-tab-default-left, .x-tab-default-right {
+background-image:linear-gradient(to top,#af0000 0,#e60000 100%);
+border-color: 1px solid #ca0000;
+background-color: #ca0000;
+color: #fff;
+}
+.x-tab-default .x-tab-inner {
+ color: #fff;   
+}
+
+.x-header-text {
+    color: #fff;
+}
+.x-panel-header-text{
+   color: #fff;
+}
+.x-panel-header-text-default{
+   color: #fff;
+}

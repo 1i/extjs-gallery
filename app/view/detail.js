@@ -6,6 +6,10 @@ Ext.define('gallery.view.detail', {
       use: 'detailedView',
       src: ''
     }, {
+      xtype: 'image',
+      use: 'detailedBackView',
+      src: ''
+    }, {
       xtype: 'container',
       use: 'text',
       title: 'Details',
@@ -13,10 +17,12 @@ Ext.define('gallery.view.detail', {
     }
 
   ],
-  loadImage: function(url) {
+  loadImage: function(url,handsetcode) {
     this.down('image[use=detailedView]').setSrc(
       'https://www.vodafone.ie/' +
       url);
+    this.down('image[use=detailedBackView]').setSrc(
+      'https://www.vodafone.ie/image/' + handsetcode +'_BACK.img');
   },
   writeInfo: function(record) {
     console.log(record);

@@ -16,6 +16,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.EventObjectImpl": "ext/src/EventObject.js",
   "Ext.Msg": "ext/src/window/MessageBox.js",
   "Ext.Supports": "ext/src/Support.js",
+  "Ext.cmd": "../../../C:/Users/Patricks/bin/Sencha/Cmd/6.2.1.29/plugins/src",
   "Ext.core.DomHelper": "ext/src/dom/Helper.js",
   "Ext.core.DomQuery": "ext/src/dom/Query.js",
   "Ext.ux.DataView.Animated": "resources/ux/Animated.js",
@@ -429,7 +430,6 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "Ext.grid.RowEditor": [],
   "Ext.grid.RowEditorButtons": [],
-  "Ext.grid.Scroller": [],
   "Ext.grid.View": [],
   "Ext.grid.ViewDropZone": [],
   "Ext.grid.column.Action": [
@@ -867,9 +867,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "gallery.view.Viewport": [],
   "gallery.view.detail": [],
   "gallery.view.featuresGrid": [],
-  "gallery.view.filters": [],
   "gallery.view.phoneGallery": [],
   "gallery.view.phoneGrid": [],
+  "gallery.view.phonefilters": [],
   "phone": []
 });
 
@@ -1312,7 +1312,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.grid.RowEditorButtons": [
     "widget.roweditorbuttons"
   ],
-  "Ext.grid.Scroller": [],
   "Ext.grid.View": [
     "widget.gridview"
   ],
@@ -1891,14 +1890,14 @@ Ext.ClassManager.addNameAliasMappings({
   "gallery.view.featuresGrid": [
     "widget.featuresGrid"
   ],
-  "gallery.view.filters": [
-    "widget.phonefilters"
-  ],
   "gallery.view.phoneGallery": [
     "widget.phoneGallery"
   ],
   "gallery.view.phoneGrid": [
     "widget.phonegrid"
+  ],
+  "gallery.view.phonefilters": [
+    "widget.phonefilters"
   ],
   "phone": []
 });

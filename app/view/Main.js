@@ -14,7 +14,7 @@ Ext.define('gallery.view.Main', {
   items: [{
     region: 'south',
     xtype: 'panel',
-    title: 'More Phone Info',
+    title: 'More Phone Info - Double click grid item for Detailed View',
     collapsible: true,
     height: 400,
     items: []
@@ -22,10 +22,10 @@ Ext.define('gallery.view.Main', {
     region: 'center',
     xtype: 'tabpanel',
     items: [{
-      title: 'Gallery',
+      title: 'Gallery - Single click to select',
       use: 'gallery',
       xtype: 'container',
-      autoScroll: true,
+      autoScroll: true
     }, {
       title: 'Comparison Grid (0 items selected)',
       count: 0,
