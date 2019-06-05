@@ -1,0 +1,50 @@
+{
+  "productid",
+  "ttproductid",
+  "handsetcode",
+  "offercode",
+  "imageFront",
+  "imageBack",
+  "imageDetails",
+  "productcategory",
+  "description",
+  "extraDescription",
+  "manufacturer",
+  "outOfStock",
+  "categoryfeatures": {
+    "Simple Phones": true,
+    "Business Phones": false,
+    "Stylish Phones": false
+  },
+  "sortfeatures": {
+    "Screen size": ["3500", "true"],
+    "Weight": ["110000", "true"],
+    "Battery Life": ["0", "false"],
+    "Ratings": ["4.0", "true"]
+  },
+  "filterfeatures": {
+    "3G": true,
+    "Android": true,
+    "Bluetooth": true,
+    "Camera": true,
+    "Email": true,
+    "FM radio": true,
+    "Internet browser": true,
+    "MP3 player": true,
+    "Picture messaging": true,
+    "Smartphone": true,
+    "Touchscreen": true,
+    "Video messaging": true,
+    "Video recording": true,
+    "WiFi": true,
+    "Large keys": false,
+    "Memory card": false,
+    "QWERTY keyboard": false,
+    "LandlineOnly": false
+  },
+  "inFuture",
+  "rating",
+  "enabled4G",
+  "productDescription",
+  "priceFrom"
+}
